@@ -26,7 +26,7 @@
         
             for (let i = 1; i <= term; i++) {
                 let interest = currentBalance * mRate;
-                let principalPayment = (sum * mRate) / (1 - Math.pow(1 + mRate, -term));
+                let principalPayment = (sum * mRate) / (1 - (1 + mRate) ** -term);
                 let commissionRate = 0;
         
                 let commission = currentBalance * commissionRate;
