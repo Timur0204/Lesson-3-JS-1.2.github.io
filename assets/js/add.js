@@ -31,7 +31,7 @@
         
                 let commission = currentBalance * commissionRate;
         
-                let principalPaymentThisMonth = principalPayment - interest - commission; // Расчет суммы, которая будет направлена на погашение основного долга в текущем месяце
+                let principalPaymentThisMonth = principalPayment - interest - commission;
         
                 if (i !== term) {
                     currentBalance -= principalPaymentThisMonth;
